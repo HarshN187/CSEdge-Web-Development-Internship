@@ -1,0 +1,115 @@
+/* styles.css */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+  }
+  
+  header {
+    position: fixed;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+    top: 0;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav ul li {
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: block;
+    transition: background 0.3s, color 0.3s;
+  }
+  
+  nav ul li a.active,
+  nav ul li a:hover {
+    background: #fff;
+    color: #000;
+  }
+  
+  section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    padding-top: 80px; /* Added to account for fixed header */
+  }
+  
+  .parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  #section1 {
+    background-image: url('path/to/your/image1.jpg');
+  }
+  
+  #section2 {
+    background-image: url('path/to/your/image2.jpg');
+  }
+  
+  #section3 {
+    background-image: url('path/to/your/image3.jpg');
+  }
+  
+  #section4 {
+    background-image: url('path/to/your/image4.jpg');
+  }
+  
+  .content {
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    header {
+      position: static;
+    }
+  
+    nav ul {
+      flex-direction: column;
+    }
+  
+    nav ul li {
+      margin: 5px 0;
+    }
+  
+    .parallax {
+      background-attachment: scroll;
+    }
+  }
+  
+  /* Additional CSS for animations */
+  
+  .fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+  }
+  
+  .fade-in.observed {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
