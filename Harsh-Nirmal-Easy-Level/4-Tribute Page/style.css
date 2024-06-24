@@ -1,0 +1,129 @@
+/* styles.css */
+
+/* General styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.profile-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto 1.5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.intro {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.intro p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.timeline {
+  background-color: #fff;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.timeline h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+}
+
+.timeline ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.timeline li {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.quotes {
+  background-color: #fff;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.quotes h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+}
+
+blockquote {
+  background-color: #f9f9f9;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-left: 5px solid #333;
+}
+
+blockquote p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+blockquote footer {
+  text-align: right;
+  font-style: italic;
+  color: #666;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+  position: fixed;
+  bottom: -100px; /* Start off-screen */
+  width: 100%;
+  transition: bottom 0.3s ease-in-out;
+}
+
+/* Responsive design */
+@media (min-width: 768px) {
+  .intro {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+  }
+
+  .intro p {
+      max-width: 60%;
+      text-align: left;
+  }
+}
